@@ -108,7 +108,7 @@ func TestNextToken(t *testing.T) {
 		{token.SEMICOLON, ";"},
 		{token.EOF, ""},
 	}
-	l := NewLexer(input)
+	l := New(input)
 	for i, tt := range tests {
 		token := l.NextToken()
 		if token.Type != tt.expectedType {
