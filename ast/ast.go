@@ -1,14 +1,13 @@
 package ast
 
 import (
-	"bytes"
-	"go/token"
+	"github.com/shengng325/monkey/token"
 )
 
 // The base Node interface
 type Node interface {
 	TokenLiteral() string
-	String() string
+	// String() string
 }
 
 // All statement nodes implement this
@@ -35,15 +34,15 @@ func (p *Program) TokenLiteral() string {
 	}
 }
 
-func (p *Program) String() string {
-	var out bytes.Buffer
+// func (p *Program) String() string {
+// 	var out bytes.Buffer
 
-	for _, s := range p.Statements {
-		out.WriteString(s.String())
-	}
+// 	for _, s := range p.Statements {
+// 		out.WriteString(s.String())
+// 	}
 
-	return out.String()
-}
+// 	return out.String()
+// }
 
 // Implements node statement
 type LetStatement struct { //let x = 5;
