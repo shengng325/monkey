@@ -284,28 +284,6 @@ func TestParsingInfixExpressions(t *testing.T) {
 			tt.operator, tt.rightValue) {
 			return
 		}
-
-		// if !testLiteralExpression(t, exp.Left, tt.leftValue) {
-		// 	return
-		// }
-		// if !testLiteralExpression(t, exp.Right, tt.rightValue) {
-		// 	return
-		// }
-
-		// exp, ok := stmt.Expression.(*ast.InfixExpression)
-		// if !ok {
-		// 	t.Fatalf("exp is not ast.InfixExpression. got=%T", stmt.Expression)
-		// }
-		// if !testIntegerLiteral(t, exp.Left, tt.leftValue) {
-		// 	return
-		// }
-		// if exp.Operator != tt.operator {
-		// 	t.Fatalf("exp.Operator is not '%s'. got=%s",
-		// 		tt.operator, exp.Operator)
-		// }
-		// if !testIntegerLiteral(t, exp.Right, tt.rightValue) {
-		// 	return
-		// }
 	}
 }
 
