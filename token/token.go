@@ -29,6 +29,9 @@ const (
 	RPAREN    = ")"
 	LBRACE    = "{"
 	RBRACE    = "}"
+	LBRACKET  = "["
+	RBRACKET  = "]"
+	COLON     = ":"
 
 	// Keywords
 	FUNCTION = "FUNCTION"
@@ -39,9 +42,6 @@ const (
 	ELSE     = "ELSE"
 	RETURN   = "RETURN"
 	STRING   = "STRING"
-
-	LBRACKET = "["
-	RBRACKET = "]"
 )
 
 type TokenType string
