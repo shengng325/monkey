@@ -39,6 +39,9 @@ const (
 	ELSE     = "ELSE"
 	RETURN   = "RETURN"
 	STRING   = "STRING"
+
+	LBRACKET = "["
+	RBRACKET = "]"
 )
 
 type TokenType string
