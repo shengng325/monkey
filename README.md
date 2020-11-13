@@ -62,6 +62,7 @@ Monkey
 >> let substract = fn(x, y) { x - y}
 >> let multiply = fn(x, y) { x * y}
 >> let divide = fn(x, y) { x / y}
+>>
 >> let calc = fn(operation, x, y) {
 		return operation(x, y)
 	}
@@ -93,7 +94,7 @@ Monkey
 55
 ```
 ### Built-in functions
-#### Currently there are 6 built-on functons supported:
+#### Currently there are 6 built-in functons supported:
 **fn len(object)**
 - Object: Only accept arrays or strings
 - Return: If the obect type is an array, len() will return the number of elements in the array. If the object type is a string, len() will return the number of characters in the string.
@@ -121,18 +122,18 @@ Monkey
 
 ###### **Note:** All built-in functions does not mutate the original object
 
-#### Working with built-in functions
+### Working with built-in functions
 **Writing an array map function**
 ```sh
->> let map = fn(arr, f) {
-	let iter = fn(arr, accumulated) {
-		if (len(arr) == 0) {
+>> let map = fn(array, f) {
+	let iter = fn(array, accumulated) {
+		if (len(array) == 0) {
 			return accumulated
 		} else {
-			iter(rest(arr), push(accumulated, f(first(arr))));
+			iter(rest(array), push(accumulated, f(first(array))));
 		}
 	};
-	iter(arr, []);
+	iter(array, []);
 };
 >> let array = [1, 2, 3, 4];
 >> let double = fn(x) { return x * 2 };
@@ -141,7 +142,7 @@ Monkey
 [2, 4, 6, 8]
 ```
 
-#### What if I have some syntax errors?
+### What if I have some syntax errors?
 A monkey face will pop out! xD
 ```sh
 >> let array = [1, 2, 3
