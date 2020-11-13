@@ -1,4 +1,4 @@
-Picture
+![Monkey-face](./assets/monkey.jpg "Monkey-face")
 # Monkey programming language
 
 A powerful interpreted language written in Go
@@ -14,13 +14,6 @@ Feel free to type in commands
 >> 
 ```
 
-## Data Structures supported
-- Integers
-- Strings
-- Booleans
-- Arrays
-- Hash Tables
-
 ## Features
 - Variable bindings
 - Aritmetic expressions
@@ -31,9 +24,9 @@ Feel free to type in commands
 
 ## Getting started
 ### Variable declaration and arithmetic operations
-Use `let` to declare a variable. Aritmetic operations supported are '+', '-', '\*' and '\' 
+Use `let` to declare a variable. Aritmetic operations supported are `+`, `-`, `*` and `\` 
 
-#### Integers, Strings
+#### Integers and Strings
 ```sh
 >> let number = 1;
 >> number + 9 * 11
@@ -57,9 +50,9 @@ Monkey
 #### Hash tables
 
 ```sh
->> let person = { "name": "Ng Ting Sheng", "age": 24}
+>> let person = { "name": "Monkey", "age": 24}
 >> person["name"]
-Ng Ting Sheng
+Monkey
 >> person["age"]
 24
 ```
@@ -82,7 +75,7 @@ Ng Ting Sheng
 3
 ```
 ### Making a Recursion call
-##### Calculating Nth Fibonacci
+#### Calculating Nth Fibonacci
 ```sh
 >> let fibonacci = fn(x) {
 		if (x == 0) {
@@ -101,35 +94,35 @@ Ng Ting Sheng
 ```
 ### Built-in functions
 #### Currently there are 6 built-on functons supported:
-##### fn len(object)
+**fn len(object)**
 - Object: Only accept arrays or strings
 - Return: If the obect type is an array, len() will return the number of elements in the array. If the object type is a string, len() will return the number of characters in the string.
 
-##### fn first(object) 
+**fn first(object)**
 - Object: Only accept arrays
 - Return: first() will return the first element of an array
 
-##### fn last(object) 
+**fn last(object)**
 - Object: Only accept arrays
 - Return: last() will return the first element of an array
 
-##### fn rest(object) 
+**fn rest(object)**
 - Object: Only accept arrays
 - Return: rest() will return a copy of the the array passed in, except for the first element
 
-##### fn push(object, element) 
+**fn push(object, element)**
 - Object: Only accept arrays
 - element: Any type of object
 - Return: push() will return a copy of the the array passed in and add the element passed in as the last element.
 
-##### fn print(object...) 
+**fn print(object...)**
 - Object: Any type of object
 - Return: print() will print out all the arguments that are passed in
 
-###### Note: All built-in functions does not mutate the original object
+###### **Note:** All built-in functions does not mutate the original object
 
 #### Working with built-in functions
-##### Writing an array map function
+**Writing an array map function**
 ```sh
 >> let map = fn(arr, f) {
 	let iter = fn(arr, accumulated) {
