@@ -1,11 +1,11 @@
 Picture
-#Monkey programming language
+# Monkey programming language
 
 A powerful interpreted language written in Go
 
 
 
-##Live demo
+## Live demo
 Try the monkey language [here](http://repl.it "here")
 
 ```sh
@@ -14,14 +14,14 @@ Feel free to type in commands
 >> 
 ```
 
-##Data Structures supported
+## Data Structures supported
 - Integers
 - Strings
 - Booleans
 - Arrays
 - Hash Tables
 
-##Features
+## Features
 - Variable bindings
 - Aritmetic expressions
 - First-class and higher-order functions
@@ -29,8 +29,8 @@ Feel free to type in commands
 - Built-in functions
 - Supported data structure: Integers, Strings, Booleans, Arrays, Hash Tables
 
-##Getting started
-###Variable declaration and arithmetic operations
+## Getting started
+### Variable declaration and arithmetic operations
 Use `let` to declare a variable. Aritmetic operations supported are '+', '-', '\*' and '\' 
 
 #### Integers, Strings
@@ -81,7 +81,7 @@ Ng Ting Sheng
 >>calc(divide, 6, 2)
 3
 ```
-###Making a Recursion call
+### Making a Recursion call
 ##### Calculating Nth Fibonacci
 ```sh
 >> let fibonacci = fn(x) {
@@ -99,8 +99,8 @@ Ng Ting Sheng
 >>fibonacci(10)
 55
 ```
-###Built-in functions
-####Currently there are 6 built-on functons supported:
+### Built-in functions
+#### Currently there are 6 built-on functons supported:
 ##### fn len(object)
 - Object: Only accept arrays or strings
 - Return: If the obect type is an array, len() will return the number of elements in the array. If the object type is a string, len() will return the number of characters in the string.
@@ -128,7 +128,7 @@ Ng Ting Sheng
 
 ###### Note: All built-in functions does not mutate the original object
 
-####Working with built-in functions
+#### Working with built-in functions
 ##### Writing an array map function
 ```sh
 >> let map = fn(arr, f) {
@@ -168,6 +168,6 @@ Woops! We ran into some monkey business here!
         expected next token to be ], got EOF instead
 ```
 
-##References
+## References
 1.  [Writing An Interpreter In Go by Thorsten Ball](https://interpreterbook.com/)
 2.  [Building Your Own Programming Language by Steve Kinney](https://frontendmasters.com/courses/programming-language/ "Building Your Own Programming Language by Steve Kinney")
