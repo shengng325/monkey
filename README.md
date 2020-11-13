@@ -94,9 +94,9 @@ Monkey
 55
 ```
 ### Built-in functions
-#### Currently there are 6 built-in functons supported:
+#### Currently there are 6 built-in functions supported:
 **fn len(object)**
-- Object: Only accept arrays or strings
+- Object: Only accept arrays and strings
 - Return: If the obect type is an array, len() will return the number of elements in the array. If the object type is a string, len() will return the number of characters in the string.
 
 **fn first(object)**
