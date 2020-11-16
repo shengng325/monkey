@@ -6,7 +6,7 @@ A powerful interpreted language written in Go
 
 
 ## Live demo
-Try the monkey language [here](http://repl.it "here")
+Try the monkey language [HERE](https://repl.it/@shengng325/monkey#README.md "HERE")
 
 ```sh
 This is the Monkey programming language!
