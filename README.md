@@ -58,10 +58,10 @@ Monkey
 ```
 ### Working with First-class and higher-order functions
 ```sh
->> let add = fn(x, y) { x + y}
->> let substract = fn(x, y) { x - y}
->> let multiply = fn(x, y) { x * y}
->> let divide = fn(x, y) { x / y}
+>> let add = fn(x, y) { x + y }
+>> let substract = fn(x, y) { x - y }
+>> let multiply = fn(x, y) { x * y }
+>> let divide = fn(x, y) { x / y }
 >>
 >> let calc = fn(operation, x, y) {
 		return operation(x, y)
