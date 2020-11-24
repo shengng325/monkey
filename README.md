@@ -31,9 +31,9 @@ Use `let` to declare a variable. Aritmetic operations supported are `+`, `-`, `*
 >> let number = 1;
 >> number + 9 * 11
 100
->> let string1 = "Hi, this is the "
->> let string2 = "Monkey language!"
->> string1 + string2
+>> let stringOne = "Hi, this is the "
+>> let stringTwo = "Monkey language!"
+>> stringOne + stringTwo
 Hi, this is the Monkey language!
 
 ```
